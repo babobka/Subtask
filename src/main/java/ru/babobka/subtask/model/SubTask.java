@@ -8,7 +8,7 @@ import ru.babobka.nodeserials.NodeRequest;
 /**
  * Created by dolgopolov.a on 08.12.15.
  */
-public interface SubTask {
+public interface SubTask{
 
 	public ExecutionResult execute(NodeRequest request);
 
@@ -20,12 +20,9 @@ public interface SubTask {
 
 	public RequestDistributor getDistributor();
 
-	public boolean isRaceStyle();
-
 	public Reducer getReducer();
+	
+	public SubTask newInstance();
 
-	public String getTaskName();
-
-	public String getDescription();
 
 }

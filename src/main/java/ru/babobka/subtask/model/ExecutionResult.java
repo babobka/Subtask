@@ -10,19 +10,19 @@ public class ExecutionResult{
 
     private final boolean stopped;
 
-    private final Map<String, Serializable> serializableHashMap;
+    private final Map<String, Serializable> resultMap;
 
 
-    public ExecutionResult(boolean stopped, Map<String, Serializable> serializableHashMap) {
+    public ExecutionResult(boolean stopped, Map<String, Serializable> resultMap) {
         this.stopped = stopped;
-        this.serializableHashMap = serializableHashMap;
+        this.resultMap = resultMap;
     }
 
     public boolean isStopped() {
         return stopped;
     }
 
-    public Map<String, Serializable> getSerializableHashMap() {
-        return serializableHashMap;
+    public Map<String, Serializable> getResultMap() {
+        return resultMap;
     }
 }
