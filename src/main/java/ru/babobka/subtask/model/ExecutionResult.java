@@ -25,4 +25,11 @@ public class ExecutionResult{
     public Map<String, Serializable> getResultMap() {
         return resultMap;
     }
+
+	@Override
+	public String toString() {
+		return "ExecutionResult [stopped=" + stopped + ", resultMap=" + resultMap + "]";
+	}
+    
+    
 }

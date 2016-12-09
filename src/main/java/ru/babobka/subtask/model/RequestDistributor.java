@@ -1,6 +1,7 @@
 package ru.babobka.subtask.model;
 
 import java.util.Map;
+import java.util.UUID;
 
 import ru.babobka.nodeserials.NodeRequest;
 
@@ -10,7 +11,7 @@ import ru.babobka.nodeserials.NodeRequest;
 public interface RequestDistributor {
 
 	public NodeRequest[] distribute(Map<String, String> arguments,
-			int nodes, long id);
+			int nodes, UUID taskId);
 
 	public boolean isValidArguments(Map<String, String> arguments);
 

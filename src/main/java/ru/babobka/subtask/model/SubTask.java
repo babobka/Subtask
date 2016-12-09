@@ -1,7 +1,5 @@
 package ru.babobka.subtask.model;
 
-import java.io.Serializable;
-import java.util.Map;
 
 import ru.babobka.nodeserials.NodeRequest;
 
@@ -16,13 +14,15 @@ public interface SubTask{
 
 	public ValidationResult validateRequest(NodeRequest request);
 
-	public boolean isRequestDataTooSmall(Map<String, Serializable> addition);
+	public boolean isRequestDataTooSmall(NodeRequest request);
 
 	public RequestDistributor getDistributor();
 
 	public Reducer getReducer();
 	
 	public SubTask newInstance();
+	
+	public boolean isStopped();
 
 
 }

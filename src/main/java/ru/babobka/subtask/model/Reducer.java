@@ -16,4 +16,5 @@ public interface Reducer {
 			List<NodeResponse> responses) throws ReducingException;
 
 	public boolean isValidResponse(NodeResponse response);
+
 }
